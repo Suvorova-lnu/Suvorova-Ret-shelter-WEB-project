@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet shelter - Суворова Софія</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Додатковий CSS для стилізації */
+        header, main, footer {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .donation-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .help-table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        
+        .help-table th, .help-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .help-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+        <h1>GetPet</h1>
+        <h2>Притулок для тварин</h2>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#animals">Наші тварини</a></li>
+                <li><a href="#help">Як допомогти</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section id="home">
+            <h2>Обери собі друга!</h2>
+            <img src="image/pngwing.com.png" style="width: 800px; height: 600px;">
+            <p>Даруйте чотирьохлапому щасливе життя - заберіть його з притулку сьогодні!</p>
+            <a href="#contact">Натисніть тут, щоб зв'язатися з нами!</a>
+        </section>
+
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Місія нашого притулку - забезпечити безпечне та комфортне житло для безпритульних тварин та допомогти їм знайти нові домівки. </p>
+            <p>Ми врятували та допомогли знайти домівки для сотень тварин. Наша робота заснована на принципах відданості та відповідальності перед тваринами. </p>
+                <p>GetPet поважає право кожної тварини на щасливе життя. Наша команда складається з волонтерів, ветеринарів та фахівців з догляду за тваринами, які працюють, щоб забезпечити кожну тварину найкращими умовами.</p>
+                <img src="image/a-day-in-the-life-of-an-animal-shelter-volunteer.jpg" style="width: 300px; height: 400px;">
+            </section>
+        
+        <section id="animals">
+            <h2>Наші тварини</h2>
+            <p>Ось деякі з наших потенційних вихователів:</p>
+            <ul>
+                <li>
+                    <img src="image/пес1.jpg" alt="Обери мене!">
+                    <h3>Чапі</h3>
+                    <h3>Вік: 1 рік</h3>
+                    <h4>Хлопчик</h4>
+                </li>
+                <li>
+                    <img src="image/kotiki_stena.jpg" alt="Обери мене!">
+                    <h3>Мія</h3>
+                    <h3>Вік: 4 роки</h3>
+                    <h4>Дівчинка</h4>
+                </li>
+                <li>
+                    <img src="image/1849044-bezpritulniy-pes-pribivsya-do-oseli-de-yogo-ne-ganyali-palitsyami.jpeg" alt="Обери мене!">
+                    <h3>Хлоя</h3>
+                    <h3>Вік: 3 роки</h3>
+                    <h4>Дівчинка</h4>
+                </li>
+            </ul>
+            <button>Дивитись більше</button>
+        </section>
+        
+        <section id="help">
+            <h2>Як допомогти</h2>
+            <p>Оберіть свій метод допомоги</p>
+            <table class="help-table">
+                <thead>
+                    <tr>
+                        <th>Час</th>
+                        <th>Кошти</th>
+                        <th>Товари</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Волонтерська робота в притулку</td>
+                        <td>Донат</td>
+                        <td>Потрібні предмети для притулку</td>
+                    </tr>
+                    <tr>
+                        <td> <form id="volunteerForm">
+                            <div class="form-group">
+                                <label for="name">Ім'я:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Електронна пошта:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="activity">Оберіть вид діяльності:</label>
+                                <select id="activity" name="activity" required>
+                                    <option value="">Оберіть вид діяльності</option>
+                                    <option value="Прибирання парку">Прибирання парку</option>
+                                    <option value="Допомога в притулку для тварин">Допомога в притулку для тварин</option>
+                                    <option value="Вигул собак">Вигул собак</option>
+                                </select>
+                            </div>
+                            <button type="submit">Надіслати заявку</button>
+                        </form></td>
+                        <td><a href="#donate">Пожертвувати</td>
+                        <td><ol>
+                            <li>Корм для тварин</li>
+                            <li>Ліки для тварин</li>
+                            <li>Іграшки для тварин</li>
+                            <li>Лежанки для тварин</li>
+                        </ol></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Ви можете зв'язатися з нами за допомогою форми нижче:</p>
+            <form class="contact-form" action="/contact" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Підписатися на новини</label>
+            <h3>Ми на мапі:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10294.108583783503!2d24.041995267382813!3d49.8325518733856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ac2b2c4f71cb3%3A0xdfcd6bfe20e6a086!2zNjJWLCDQstGD0LvQuNGG0Y8g0J_QsNGB0ZbRh9C90LAsIDYy0JIsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709653418895!5m2!1suk!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </section>
+    </main>
+    
+    <footer>
+        <p>	&#169 2024 Притулок GetPet. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Загальні стилі */
+body {
+    background-color: #ebf5f2;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #255459;
+}
+
+/* Стилі для шапки */
+header {
+    background-color: #4fa88e;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.title {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.title h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title h2 {
+    font-size: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* Стилі для меню */
+nav {
+    margin-top: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    font-size: 20px;
+}
+
+/* Стилі для підвалу */
+footer {
+    background-color: #4fa88e;
+    padding-top: 10px;
+}
+
+footer p {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+/* Navigation */
+
+#animals img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+}
