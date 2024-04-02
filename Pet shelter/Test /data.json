@@ -1,1 +1,152 @@
-
+{
+    "testName": "Тест: Готовність взяти собі друга з притулку",
+    "questions": [
+      {
+        "question": "Скільки разів в середньому треба вигулювати собаку?",
+        "answers": [
+          {
+            "answer": "1 раз на день",
+            "isCorrect": false
+          },
+          {
+            "answer": "2 рази на день",
+            "isCorrect": false
+          },
+          {
+            "answer": "3 рази на день",
+            "isCorrect": true
+          },
+          {
+            "answer": "4 рази на день",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Що робити, коли улюбленець не хоче їсти?",
+        "answers": [
+          {
+            "answer": "Змінити корм",
+            "isCorrect": false
+          },
+          {
+            "answer": "Змусити його їсти",
+            "isCorrect": false
+          },
+          {
+            "answer": "Звернутися до ветеринара",
+            "isCorrect": true
+          },
+          {
+            "answer": "Погрожувати йому",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Як часто потрібно чистити лоток кішки?",
+        "answers": [
+          {
+            "answer": "1 раз на тиждень",
+            "isCorrect": false
+          },
+          {
+            "answer": "2 рази на тиждень",
+            "isCorrect": true
+          },
+          {
+            "answer": "3 рази на тиждень",
+            "isCorrect": false
+          },
+          {
+            "answer": "Кожен день",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Які ветеринарні процедури потрібні собакам?",
+        "answers": [
+          {
+            "answer": "Вакцинація",
+            "isCorrect": true
+          },
+          {
+            "answer": "Стрижка кігтів",
+            "isCorrect": false
+          },
+          {
+            "answer": "Купання раз на місяць",
+            "isCorrect": false
+          },
+          {
+            "answer": "Почухати пузико",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Як позбавитися від блох у домашньої тварини?",
+        "answers": [
+          {
+            "answer": "Використовувати спеціальний шампунь",
+            "isCorrect": true
+          },
+          {
+            "answer": "Пропустити кілька днів купання",
+            "isCorrect": false
+          },
+          {
+            "answer": "Підстригти улюбленця",
+            "isCorrect": false
+          },
+          {
+            "answer": "Ігнорувати проблему",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Чому важливо регулярно годувати тварину?",
+        "answers": [
+          {
+            "answer": "Тварина сама знає, коли їй їсти",
+            "isCorrect": false
+          },
+          {
+            "answer": "Тварина може померти від голоду",
+            "isCorrect": true
+          },
+          {
+            "answer": "Годування не впливає на здоров'я тварини",
+            "isCorrect": false
+          },
+          {
+            "answer": "Тварина сама знайде їжу",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Що включає в себе регулярний догляд за твариною?",
+        "answers": [
+          {
+            "answer": "Лише годування",
+            "isCorrect": false
+          },
+          {
+            "answer": "Тільки прогулянки",
+            "isCorrect": false
+          },
+          {
+            "answer": "Годування, гігієна, ветеринарний догляд",
+            "isCorrect": true
+          },
+          {
+            "answer": "Тільки купання",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
