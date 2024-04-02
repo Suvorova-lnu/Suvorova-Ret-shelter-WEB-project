@@ -74,6 +74,26 @@
 
         this.reset();
     });
+          function filterForms() {
+      const forms = JSON.parse(localStorage.getItem('surveyForms')) || [];
+      const filteredForms1 = forms.filter(form => parseInt(form.adoptionKnowledge) === 10);
+      const filteredForms2 = forms.filter(form => form.petExperience === 'yes');
+        const filteredForms3 = forms.filter(form => {
+        const meetingTime = new Date(form.meetingTime);
+        return meetingTime.getDate() === 15 && 
+               meetingTime.getMonth() === 3 && 
+               meetingTime.getFullYear() === 2024 &&
+               meetingTime.getHours() === 12 && 
+               meetingTime.getMinutes() === 0;
+      });
+
+      console.log('Фільтровані результати за рівнем ознайомлення:', filteredForms1);
+      console.log('Фільтровані результати за досвідом у догляді за тваринами:', filteredForms2);
+      console.log('Фільтровані результати за датою зустрічі:', filteredForms3);
+    }
+    
+    filterForms();
+    filterResults();
     </script>
 </body>
 </html>
