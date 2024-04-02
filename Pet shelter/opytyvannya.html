@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма опитування для адопції тварин</title>
+  <link rel="stylesheet" href="fformastyle.css">
+</head>
 
+<body>
+  <h1>Форма для адопції тваринки</h1>
+  <form>
+    <fieldset>
+      <legend>Особисті дані:</legend>
+      
+      <label for="shelterSource">1. Звідки ви дізнались про наш притулок?</label><br>
+<input list="shelterSources" id="shelterSource" name="shelterSource">
+<datalist id="shelterSources">
+  <option value="Інтернет">
+  <option value="Друзі">
+  <option value="Оголошення">
+  <option value="Інше">
+</datalist><br>
+      
+      <label for="adoptionKnowledge">2. Оцініть ваш рівень ознайомлення з процесом адопції:</label><br>
+      <input type="range" id="adoptionKnowledge" name="adoptionKnowledge" min="0" max="10"><br>
+      
+      <label for="petExperience">3. Чи маєте ви досвід у догляді за домашніми тваринами?</label><br>
+      <input type="checkbox" id="petExperience" name="petExperience" value="yes">Так<br>
+      <input type="checkbox" id="petExperience" name="petExperience" value="no">Ні<br>
+      
+      <label for="otherPets">4. Чи маєте ви інших домашніх тварин?</label><br>
+      <input type="radio" id="otherPets_yes" name="otherPets" value="yes">Так<br>
+      <input type="radio" id="otherPets_no" name="otherPets" value="no">Ні<br>
+      
+      <label for="timeDedication">5. Скільки часу ви готові приділяти вашому улюбленцю (години на тиждень)?</label><br>
+      <input type="number" id="timeDedication" name="timeDedication" min="0" step="1"><br>
+      
+      <label for="breedKnowledge">6. Чи знаєте ви про особливості породи у тварини, яку ви розглядаєте для адопції?</label><br>
+<select id="breedKnowledge" name="breedKnowledge">
+  <option value="так">Так</option>
+  <option value="частково">Частково</option>
+  <option value="взагалі не ознайомлений">Взагалі не ознайомлений</option>
+</select><br>
+      
+      <label for="chosenPet">7. Напишить кого ви обрали:</label><br>
+      <input type="text" id="chosenPet" name="chosenPet"><br>
+      
+      <label for="meetingTime">8. Коли ви готові зустрітись з потенційним улюбленцем?</label><br>
+      <input type="datetime-local" id="meetingTime" name="meetingTime"><br>
+      
+      <label for="email">9. Введіть вашу пошту:</label><br>
+      <input type="email" id="email" name="email"><br>
+      
+      <input type="submit" value="Надіслати форму">
+    </fieldset>
+  </form>
+</body>
+</html>
