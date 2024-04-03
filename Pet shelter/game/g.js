@@ -154,4 +154,10 @@ document.addEventListener("DOMContentLoaded", function() {
         dy += (dy > 0) ? 0.1 : -0.1;
     }
     const resetBtn = document.getElementById("resetBtn");
+resetBtn.addEventListener("click", function() {
+    localStorage.removeItem("topScores");
+    localStorage.removeItem("worstScores");
+    updateScoreList(topList, []);
+    updateScoreList(worstList, []);
+});
 });
