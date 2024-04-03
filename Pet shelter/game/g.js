@@ -30,9 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
         // Ball collision detection with walls
         if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
             dx = -dx;
+            increaseSpeed();
         }
         if (y + dy < ballRadius) {
             dy = -dy;
+            increaseSpeed();
         } else if (y + dy > canvas.height - ballRadius) {
             gameOver();
         }
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Paddle collision detection
         if (x > paddleX && x < paddleX + paddleWidth && y + dy > canvas.height - paddleHeight - ballRadius) {
             dy = -dy;
+            increaseSpeed();
         }
 
         // Move paddle
@@ -101,5 +104,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Game loop interval
     const interval = setInterval(draw, 10);
+
+    // Speed up ball after each collision
+    function increaseSpeed() {
+        dx += (dx > 0) ? 0.1 : -0.1;
+        dy += (dy > 0) ? 0.1 : -0.1;
+    }
 });
 
